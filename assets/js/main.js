@@ -245,11 +245,11 @@ const services = {
       img: "assets/img/vpn.jpg",
       desc: "Conexão segura e criptografada entre redes."
       */
-      Titulo_1: "Qual o objetivo do Controle de Acesso ou ACL?",
-      img: "assets/img/servicos/ACLs.jpg",
-      Desc_titulo1: "O controle de acesso permite a empresa manter a confidencialidade das informaçoes",
-      Titulo_img1: "Empresas que gerenciam os usuarios atraves de ACLs garantem mais segurança aos seus dados",
-      Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que realizam o gerenciamento por ACLs garantem mais segurança aos dados e aos seus sistemas informativos.",
+      Titulo_1: "Qual a vantagem de se ter uma VPN em sua empresa?",
+      img: "assets/img/servicos/VPN2.jpeg",
+      Desc_titulo1: "Com a VPN a sua empresa entegra Matriz e Filial...",
+      Titulo_img1: "Empresas que utilizam VPN garantem mais segurança aos seus dados",
+      Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que utilizam VPN garantem mais segurança aos dados e aos seus sistemas informativos.",
       Lista1_img1: "Descriçao da Lista1 da imagem 1",
       Lista2_img1: "Descriçao da Lista2 da imagem 1",
       Lista3_img1: "Descriçao da Lista3 da imagem 1",
@@ -262,11 +262,11 @@ const services = {
       img: "assets/img/redundancia.jpg",
       desc: "Garantia de conexão contínua mesmo com falhas."
       */
-      Titulo_1: "Qual o objetivo do Controle de Acesso ou ACL?",
-      img: "assets/img/servicos/ACLs.jpg",
-      Desc_titulo1: "O controle de acesso permite a empresa manter a confidencialidade das informaçoes",
-      Titulo_img1: "Empresas que gerenciam os usuarios atraves de ACLs garantem mais segurança aos seus dados",
-      Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que realizam o gerenciamento por ACLs garantem mais segurança aos dados e aos seus sistemas informativos.",
+      Titulo_1: "Será se as empresas realmente precisam de Redundan?",
+      img: "assets/img/servicos/failoverlinks.jpg",
+      Desc_titulo1: "A redundancia de links permite maior disponibilidade dos seus serviços on line",
+      Titulo_img1: "Quanto vale 1 minuto de sua empresa?",
+      Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que trabalham com redundancia de links garantem mais conforto, comodidade e disponibildade de seus dados.",
       Lista1_img1: "Descriçao da Lista1 da imagem 1",
       Lista2_img1: "Descriçao da Lista2 da imagem 1",
       Lista3_img1: "Descriçao da Lista3 da imagem 1",
@@ -279,10 +279,10 @@ const services = {
       img: "assets/img/wifi.jpg",
       desc: "Distribuição de internet sem fio controlada."
       */
-      Titulo_1: "Qual o objetivo do Controle de Acesso ou ACL?",
-      img: "assets/img/servicos/ACLs.jpg",
-      Desc_titulo1: "O controle de acesso permite a empresa manter a confidencialidade das informaçoes",
-      Titulo_img1: "Empresas que gerenciam os usuarios atraves de ACLs garantem mais segurança aos seus dados",
+      Titulo_1: "Qual a diferença entre um Wifi corporativo e um Wifi comum?",
+      img: "assets/img/servicos/wifihotspot.jpg",
+      Desc_titulo1: "O wifi corporativo voce controla todos os acessos e monitora todos os passos dos seus clientes.",
+      Titulo_img1: "Empresas que gerenciam os usuarios atraves de Wifi garantem mais segurança aos seus dados",
       Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que realizam o gerenciamento por ACLs garantem mais segurança aos dados e aos seus sistemas informativos.",
       Lista1_img1: "Descriçao da Lista1 da imagem 1",
       Lista2_img1: "Descriçao da Lista2 da imagem 1",
@@ -296,8 +296,8 @@ const services = {
       img: "assets/img/monitoramento.jpg",
       desc: "Acompanhamento em tempo real da infraestrutura."
       */
-      Titulo_1: "Qual o objetivo do Controle de Acesso ou ACL?",
-      img: "assets/img/servicos/ACLs.jpg",
+      Titulo_1: "Qual a importancia de mapear todos os ativos de rede?",
+      img: "assets/img/servicos/monitoramento.png",
       Desc_titulo1: "O controle de acesso permite a empresa manter a confidencialidade das informaçoes",
       Titulo_img1: "Empresas que gerenciam os usuarios atraves de ACLs garantem mais segurança aos seus dados",
       Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que realizam o gerenciamento por ACLs garantem mais segurança aos dados e aos seus sistemas informativos.",
