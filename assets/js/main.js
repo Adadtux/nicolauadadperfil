@@ -203,7 +203,93 @@
       }
     }
   });
+/** Funçao para exibir a lista de serviços por paginas e descriçoes diferentes */
+const services = {
+    pentest: {
+      /** 
+      title: "Pentest",
+      img: "assets/img/servicos/Pentest.jpg",
+      desc: "Teste de invasão para identificar vulnerabilidades no sistema.", 
+      */
+      Titulo_1: "Qual o objetivo do Pentest?",
+      img: "assets/img/servicos/Pentest.jpg",
+      Desc_titulo1: "Testar a Vulnerabilidade de sua empresa",
+      Titulo_img1: "Empresas que testam suas vulerabilidades garantem mais segurança aos seus dados",
+      Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que realizam os testes de vulnerabilidades garantem mais segurança aos dados e aos seus sistemas informativos.",
+      Lista1_img1: "Descriçao da Lista1 da imagem 1",
+      Lista2_img1: "Descriçao da Lista2 da imagem 1",
+      Lista3_img1: "Descriçao da Lista3 da imagem 1",
+      Texto1_img1: "Descriçao do texto 1",
+      Texto2_img1: "Descriçao do texto 2"
+    },
+    acesso: {
+      /**
+      title: "Controle de Acesso",
+      img: "assets/img/acesso.jpg",
+      desc: "Gerenciamento de quem pode acessar sistemas e recursos."
+      */
+      Titulo_1: "Qual o objetivo do Controle de Acesso ou ACL?",
+      img: "assets/img/servicos/ACLs.jpg",
+      Desc_titulo1: "O controle de acesso permite a empresa manter a confidencialidade das informaçoes",
+      Titulo_img1: "Empresas que gerenciam os usuarios atraves de ACLs garantem mais segurança aos seus dados",
+      Desc_imagem1: "O Relatorio estatistico aponta que 95% das empresas que realizam o gerenciamento por ACLs garantem mais segurança aos dados e aos seus sistemas informativos.",
+      Lista1_img1: "Descriçao da Lista1 da imagem 1",
+      Lista2_img1: "Descriçao da Lista2 da imagem 1",
+      Lista3_img1: "Descriçao da Lista3 da imagem 1",
+      Texto1_img1: "Descriçao do texto 1",
+      Texto2_img1: "Descriçao do texto 2"
+    },
+    vpn: {
+      title: "VPN",
+      img: "assets/img/vpn.jpg",
+      desc: "Conexão segura e criptografada entre redes."
+    },
+    redundancia: {
+      title: "Redundância de Links",
+      img: "assets/img/redundancia.jpg",
+      desc: "Garantia de conexão contínua mesmo com falhas."
+    },
+    wifi: {
+      title: "Wifi Hotspot",
+      img: "assets/img/wifi.jpg",
+      desc: "Distribuição de internet sem fio controlada."
+    },
+    monitoramento: {
+      title: "Monitoramento de Rede",
+      img: "assets/img/monitoramento.jpg",
+      desc: "Acompanhamento em tempo real da infraestrutura."
+    }
+  };
 
+  const links = document.querySelectorAll(".services-list a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const service = this.getAttribute("data-service");
+      /**
+      document.getElementById("service-title").innerText = services[service].title;
+      document.getElementById("service-desc").innerText = services[service].desc;
+      document.getElementById("service-img").src = services[service].img;
+      */
+      document.getElementById("service-img").src = services[service].img;
+      
+      document.getElementById("service-Titulo_1").innerText = services[service].Titulo_1;
+      document.getElementById("service-Desc_titulo1").innerText = services[service].Desc_titulo1;
+      
+      document.getElementById("service-Titulo_img1").innerText = services[service].Titulo_img1;
+      document.getElementById("service-Desc_imagem1").innerText = services[service].Desc_imagem1;
+      
+      document.getElementById("service-Lista1_img1").innerText = services[service].Lista1_img1;
+      document.getElementById("service-Lista2_img1").innerText = services[service].Lista2_img1;
+      document.getElementById("service-Lista3_img1").innerText = services[service].Lista3_img1;
+      
+      document.getElementById("service-Texto1_img1").innerText = services[service].Texto1_img1;
+      document.getElementById("service-Texto2_img1").innerText = services[service].Texto2_img1;
+    });
+  });
+  
   /**
    * Navmenu Scrollspy
    */
