@@ -308,7 +308,10 @@ const services = {
       Texto2_img1: "Descriçao do texto 2"
     }
   };
+  
+  /** Mudança de opacidade nas imagens da pagina Detalhes de Serviços */
 
+  const img = document.getElementById('service-img');
   const links = document.querySelectorAll(".services-list a");
 
   links.forEach(link => {
@@ -322,8 +325,18 @@ const services = {
       //this.classList.add("active");
 
       const service = this.getAttribute("data-service");
+      // inicia fade out
+      img.classList.add('fade-out');
 
-      if (!services[service]) {
+    setTimeout(() => {
+      // troca imagem depois que sumir
+      img.src = `assets/img/servicos/${service}.jpg`;
+
+      // volta com fade in
+      img.classList.remove('fade-out');
+    }, 400); // mesmo tempo do CSS
+      
+    if (!services[service]) {
         console.log("Serviço nao encontrado:", service);
         return;
       }

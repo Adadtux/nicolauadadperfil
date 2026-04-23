@@ -1283,3 +1283,15 @@ section,
   font-weight: bold;
 }
 */
+/* Mudanca de opacidade na pagina Detalhes de Serviços*/
+#service-img {
+  transition: opacity 0.4s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
