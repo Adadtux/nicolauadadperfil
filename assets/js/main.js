@@ -312,56 +312,55 @@ const services = {
   /** Mudança de opacidade nas imagens da pagina Detalhes de Serviços */
 
   const img = document.getElementById('service-img');
-  const links = document.querySelectorAll(".services-list a");
+const links = document.querySelectorAll(".services-list a");
 
-  links.forEach(link => {
-    link.addEventListener("click", function(e) {
-      e.preventDefault();
+links.forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
 
-      //remove ativo de todos
-      //links.forEach(1 => 1.classList.remove("active"));
+    const service = this.getAttribute("data-service");
 
-      //adiciona no clicado
-      //this.classList.add("active");
+    if (!services[service]) {
+      console.log("Serviço nao encontrado:", service);
+      return;
+    }
 
-      const service = this.getAttribute("data-service");
-      // inicia fade out
+    const newSrc = services[service].img;
+
+    // pré-carrega a imagem
+    const tempImg = new Image();
+    tempImg.src = newSrc;
+
+    tempImg.onload = () => {
+
+      // FADE OUT
       img.classList.add('fade-out');
 
-    setTimeout(() => {
-      // troca imagem depois que sumir
-      img.src = `assets/img/servicos/${service}.jpg`;
+      setTimeout(() => {
+        // troca imagem (AGORA SIM, só aqui)
+        img.src = newSrc;
 
-      // volta com fade in
-      img.classList.remove('fade-out');
-    }, 400); // mesmo tempo do CSS
-      
-    if (!services[service]) {
-        console.log("Serviço nao encontrado:", service);
-        return;
-      }
-      
-      /**
-      document.getElementById("service-title").innerText = services[service].title;
-      document.getElementById("service-desc").innerText = services[service].desc;
-      document.getElementById("service-img").src = services[service].img;
-      */
-      document.getElementById("service-img").src = services[service].img;
-      
-      document.getElementById("service-Titulo_1").innerText = services[service].Titulo_1;
-      document.getElementById("service-Desc_titulo1").innerText = services[service].Desc_titulo1;
-      
-      document.getElementById("service-Titulo_img1").innerText = services[service].Titulo_img1;
-      document.getElementById("service-Desc_imagem1").innerText = services[service].Desc_imagem1;
-      
-      document.getElementById("service-Lista1_img1").innerText = services[service].Lista1_img1;
-      document.getElementById("service-Lista2_img1").innerText = services[service].Lista2_img1;
-      document.getElementById("service-Lista3_img1").innerText = services[service].Lista3_img1;
-      
-      document.getElementById("service-Texto1_img1").innerText = services[service].Texto1_img1;
-      document.getElementById("service-Texto2_img1").innerText = services[service].Texto2_img1;
-    });
+        // atualiza textos JUNTO com a imagem
+        document.getElementById("service-Titulo_1").innerText = services[service].Titulo_1;
+        document.getElementById("service-Desc_titulo1").innerText = services[service].Desc_titulo1;
+
+        document.getElementById("service-Titulo_img1").innerText = services[service].Titulo_img1;
+        document.getElementById("service-Desc_imagem1").innerText = services[service].Desc_imagem1;
+
+        document.getElementById("service-Lista1_img1").innerText = services[service].Lista1_img1;
+        document.getElementById("service-Lista2_img1").innerText = services[service].Lista2_img1;
+        document.getElementById("service-Lista3_img1").innerText = services[service].Lista3_img1;
+
+        document.getElementById("service-Texto1_img1").innerText = services[service].Texto1_img1;
+        document.getElementById("service-Texto2_img1").innerText = services[service].Texto2_img1;
+
+        // FADE IN
+        img.classList.remove('fade-out');
+
+      }, 400);
+    };
   });
+});
   
   /**
    * Navmenu Scrollspy
