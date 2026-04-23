@@ -1270,20 +1270,18 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+
 /* Funçao utilizada na pagina de serviços para destacas os itens da Lista*/
 .bold-font-mouse:hover {
   font-weight: bold;
 }
-/* 
+ 
 .service-list a.active {
   color: #0d6efd;
   font-weight: bold;
 }
-*/
-/* Mudanca de opacidade na pagina Detalhes de Serviços*/
+
+/* Mudanca de opacidade da imagem na pagina Detalhes de Serviços*/
 #service-img {
   transition: opacity 0.4s ease-in-out;
 }

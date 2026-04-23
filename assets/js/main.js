@@ -318,6 +318,12 @@ links.forEach(link => {
   link.addEventListener("click", function(e) {
     e.preventDefault();
 
+    // remove ativo de todos
+    links.forEach(1 => 1.classList.remove("active"));
+
+    //adiciona "active" no item clicado
+    this.classList.add("active");
+
     const service = this.getAttribute("data-service");
 
     if (!services[service]) {
